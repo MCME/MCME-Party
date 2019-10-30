@@ -1,0 +1,6 @@
+name: ${project.artifactId}
+main: com.mcmiddleearth.party.PartyPlugin
+version: ${project.version}
+description: A plugin to create your own party for role playing or whatever.
+load: POSTWORLD
+depend: []
