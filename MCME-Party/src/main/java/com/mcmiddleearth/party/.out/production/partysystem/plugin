@@ -1,0 +1,6 @@
+name: PartySystem
+main: me.cameron.main.Main
+version: 0.0.0
+
+commands:
+  party:
