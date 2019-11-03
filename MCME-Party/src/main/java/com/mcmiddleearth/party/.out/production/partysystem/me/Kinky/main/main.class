@@ -1,0 +1,41 @@
+package me.cameron.main;
+
+import java.io.File;
+import me.cameron.main.command.PartyCommand;
+import me.cameron.main.config.ConfigurationFile;
+import me.cameron.main.config.ConfigurationFileManager;
+import me.cameron.main.party.PartyManager;
+import org.bukkit.Bukkit;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.java.JavaPlugin;
+
+
+public class Main
+  extends JavaPlugin
+{
+  public void onEnable() {
+    ConfigurationFileManager.registerConfigurationFile(new ConfigurationFile("messages", new File(getDataFolder(), "messages.yml")));
+    ConfigurationFileManager.registerConfigurationFile(new ConfigurationFile("data", new File(getDataFolder(), "data.yml")));
+    ConfigurationFileManager.registerConfigurationFile(new ConfigurationFile("config", new File(getDataFolder(), "config.yml")));
+
+
+
+    
+    Bukkit.getPluginManager().registerEvents((Listener)new PartyManager(), (Plugin)this);
+
+
+
+    
+    getCommand("party").setExecutor((CommandExecutor)new PartyCommand());
+    
+    Bukkit.getConsoleSender().sendMessage("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+    Bukkit.getConsoleSender().sendMessage("Plugin start: " + getName());
+    Bukkit.getConsoleSender().sendMessage("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+  }
+
+
+  
+  public static Main getInstance() { return (Main)getPlugin(Main.class); }
+}
