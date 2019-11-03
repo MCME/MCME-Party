@@ -1,0 +1,9 @@
+package me.cameron.main.utils;
+
+import org.bukkit.ChatColor;
+
+
+public class CC
+{
+  public static String format(String s) { return ChatColor.translateAlternateColorCodes('&', s); }
+}
