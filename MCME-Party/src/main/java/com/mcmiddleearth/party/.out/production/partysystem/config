@@ -1,0 +1,16 @@
+# Should parties be announced once they are created
+# This can be toggled ingame by admins with /party broadcast
+announcePartyJoinGlobally: true
+
+# How long until the party invite sent to the player times out in seconds
+partyInviteTimeout: 30
+
+# Should players in parties be able to see global chat
+#
+# Example: Player A is in a party with Player B and player C is not in a party
+# With global chat on Player A will be able to see Player C's messages
+# But player C will not be able to see player A's messages
+# Without global chat Player A will not see Player C's messages only
+# messages from Player B.
+#
+globalChatInParties: false

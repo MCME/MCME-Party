@@ -1,0 +1,104 @@
+# %player% is the leader of the party or the admin who disbanded it
+partyDisbandMessage: "&c%player% has disbanded the party ):"
+
+# This message will broadcast when a player creates a party if party broadcasting is enabled
+# %player% is the leader of the party
+globalCreationAnnounce: "&b%player% has created a party"
+
+# This message will show when a player creates a party
+playerCreationMessage: "&bYou have created a party!"
+
+# This message will show when a player is invited to a party
+# %leader% is the owner of the party who invited the player
+# %accept% is the accept button that can be configured above
+# %seconds% is how long until the party invite expires. This can be configured in the config file
+playerInviteMessage: "&b%leader% invited you to join their party this offer will time out in 30 seconds. Type /party accept %leader% to accept."
+
+# The message will show to the party when a player is invited
+# %leader% is the owner of the party who invited the player
+# %player% is the player who was invited
+partyInviteAnnounce: "&b%leader% invited %player% to the party"
+
+# This message will show to a player when they are kicked from a party
+# %player% is the leader/admin who kicked the player out of the party
+playerKickMessage: "&c%player% kicked you from the party"
+
+# This message will show to all members of the party when a player is kicked out of the party
+# %player% is the player who was kicked
+# %kicker% is the player who kicked the player out of the party
+partyKickAnnouncement: "&c%kicker% removed %player% from the party"
+
+# This message will show to all party members when a player leaves the party
+# %player% is the player who left
+partyLeaveAnnounce: "&e%player% left the party ):"
+
+# This message will show to the player when they leave the party
+playerLeaveMessage: "&eYou left the party ):"
+
+# This message will show when a player joins a party
+# %leader% is the owner of the party
+playerJoinMessage: "&aYou have joined %leader%'s party"
+
+# This message will show to all members of the party when a player joins the party
+# %player% is the player who joined the party
+partyJoinAnnounce: "&b%player% joined the party"
+
+# This message will show when a player tries to join a party they where not invited to or that does not exist
+playerFailJoinMessage: "&cYou where not invited to that party or it does not exist"
+
+# This message will show when a player disbands a party
+playerDisbandMessage: "&bYou have disbanded your party"
+
+# This message will show when a party leader or admin types /party view
+partyViewMessage: "&b%leader%'s party: %players%"
+
+# This message will show when an admin disbands another player's party
+# %leader% is the party leader who's party was disbanded
+adminDisbandMessage: "&bYou have disbanded %leader%'s party"
+
+# This message will show when an admin spys on a party
+# %leader% is the party that is being spyed on's leader
+adminPartySpyMessage: "&bYou are now spying on %leader%'s party"
+
+# This message will show when an admin spys on every party
+adminPartySpyAllMessage: "&bYou are now spying on all parties"
+
+# This message will show when an admin spys on a party
+# %leader% is the party that is being spyed on's leader
+adminPartyUnSpyMessage: "&bYou are no longer spying on %leader%'s party"
+
+# This message will show when an admin spys on every party
+adminPartyUnSpyAllMessage: "&bYou are no longer spying on all parties"
+
+# This message will show when a admin toggles parties broadcasting
+# %value% is a true or false depending if its on or off
+adminPartyBroadcastingToggleMessage: "&bYou set party broadcasting to %value%"
+
+# This message will show when a admin toggles a player's ban
+# %value% is a true or false depending if its on or off
+adminBanPlayerMessage: "&bBan status of %player% set to %value%"
+
+# This message will show when a admin is spies on a party that is disbanded
+# %leader% is the party that is being spyed on's leader
+# %player% is the player who disbanded the party
+adminPartySpyDisbandMessage: "&bYou are no longer spying on %leader%'s party because it was disbanded by %player%"
+
+# This message will show when a player types /party and does not have access to the other commands
+playerPartyHelpMessage: "&c&lParty Help\n\n&c/party create\n&c/party disband\n&c/party kick [player name]\n&c/party invite [player name]\n&c/party accept [player name]\n/party leave"
+
+# This message will show when a admin types /party
+adminPartyHelpMessage: "&c&lParty Help\n\n&c/party create\n&c/party disband\n&c/party kick [player name]\n&c/party invite [player name]\n&c/party accept [player name]\n&c/party leave\n\n\n&c/party akick [player name]\n&c/party adisband [player name]\n/party disable [player name]\n/party spy [all:PLAYERNAME]\n/party view\n/party broadcast"
+
+playerNoPermission: "&cYou don't have permission to do this"
+consoleNotPossible: "&cYou cant do this in console"
+playerAlreadyInParty: "&cYou are already in a party"
+playerNotInParty: "&cYou are not in a party"
+playerNotLeader: "&cYou need to be a leader of the party to do this"
+playerPartyBanned: "&cYou are not allowed to create or join parties"
+playerCannotKickSelf: "&cYou cant kick yourself. Use /party disband to disband your party"
+playerCannotInviteSelf: "&cYou cant invite yourself to your own party"
+playerCannotJoinSelf: "&cYou cant join your own party"
+playerNotInvited: "&cYou where not invited yet"
+targetAlreadyInParty: "&cThat player is already in a party"
+targetNotInParty: "&cThat player is not in a party"
+targetAlreadyInvited: "&cYou already invited this player to your party within the last 30 seconds"
